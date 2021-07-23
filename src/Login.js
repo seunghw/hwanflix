@@ -4,7 +4,11 @@ import "./Login.scss";
 function Login(props) {
     return (
         <div>
-            로그인 페이지임다.
+            <div className="background">
+            로f그인 페이지임다.
+
+            </div>
+            
         </div>
     )
 }
