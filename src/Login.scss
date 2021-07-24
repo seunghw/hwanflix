@@ -1,6 +1,40 @@
-.background {
-  background-color: black;
-  padding: 30px;
+body {
+  background-color: #1f1e1e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.Navbar {
+  padding: 25px;
+
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 0) 10%,
+    rgba(20, 20, 20, 0.6) 60%,
+    rgba(20, 20, 20, 0.75) 75%,
+    rgba(20, 20, 20, 0.9) 87%,
+    rgba(20, 20, 20, 1) 100%
+  );
+}
+
+.profile_header {
+  margin-top: 140px;
+  text-align: center;
+  color: white;
+}
+
+.choose_profile {
   display: flex;
-  color: beige;
+  justify-content: center;
+  .profile {
+    padding: 10px;
+  }
 }
