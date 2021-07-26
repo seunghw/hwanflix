@@ -1,5 +1,5 @@
 body {
-  background-color: #1f1e1e;
+  background-color: #1a1a1a;
 }
 
 * {
@@ -29,12 +29,61 @@ ul {
   margin-top: 140px;
   text-align: center;
   color: white;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 250%;
 }
 
 .choose_profile {
   display: flex;
   justify-content: center;
+  color: gray;
+  text-align: center;
+
   .profile {
     padding: 10px;
+
+    img {
+      border-radius: 5px;
+    }
+
+    div {
+      padding: 15px;
+    }
   }
+}
+.profile_set {
+  padding-top: 15px;
+  text-align: center;
+}
+.profile_button {
+  color: gray;
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid gray;
+  display: center;
+  justify-content: center;
+
+  transition-duration: 0.4s;
+}
+
+.profile_button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.profile {
+  transition-duration: 0.4s;
+}
+
+li:hover {
+  img {
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  color: white;
 }
