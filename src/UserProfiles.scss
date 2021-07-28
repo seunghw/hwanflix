@@ -1,0 +1,134 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  color: white;
+  font-size: 10px;
+
+  opacity: 1;
+  transform: scale(1);
+  transition-duration: 450ms;
+  transition-delay: 200ms;
+}
+
+.label {
+  font-size: 11px;
+  color: white;
+  padding: 0.5em;
+
+  background-color: rgb(58, 58, 58);
+  border-radius: 3px;
+  display: center;
+  text-align: center;
+  width: 30%;
+}
+
+h2 {
+  margin-top: 1vw;
+  padding-bottom: 1vw;
+}
+input {
+  width: 100%;
+}
+.User {
+  text-align: left;
+
+  .user_header {
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+  }
+
+  #user_name {
+    width: 280px;
+    height: 30px;
+    color: white;
+    background-color: gray;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .profile_metadata {
+    display: flex;
+
+    .user_img {
+      margin-top: 1vw;
+      padding-top: 1vw;
+    }
+
+    .metadata {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #333;
+      margin: 1vw;
+      padding: 1vw;
+      .auto_play,
+      .age_set {
+        border-top: 1px solid #333;
+        margin-top: 1vw;
+        padding-bottom: 1vw;
+      }
+    }
+  }
+
+  .User_profile_btn {
+    padding-top: 10px;
+    text-align: left;
+    button {
+      margin-right: 15px;
+    }
+  }
+
+  .btn_save {
+    color: black;
+    padding: 8px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: white;
+    border: 1px black;
+    display: center;
+    justify-content: center;
+  }
+
+  .btn_save:hover {
+    background-color: red;
+    color: white;
+  }
+
+  .btn_back,
+  .btn_del {
+    color: gray;
+    padding: 8px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: transparent;
+    border: 1px solid gray;
+    display: center;
+    justify-content: center;
+  }
+
+  .btn_back:hover,
+  .btn_del:hover,
+  .edit:hover {
+    color: white;
+    border: 1px solid white;
+  }
+
+  .edit {
+    font-size: 10px;
+    color: gray;
+    padding: 0.5em 1.5em;
+    background-color: transparent;
+    border: 1px solid gray;
+    display: center;
+    justify-content: center;
+  }
+
+  p {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+}

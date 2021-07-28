@@ -29,6 +29,7 @@ function ManageProfiles(props) {
     )
 }
 
+
 function Profile(props) {
 
     let history = useHistory();
@@ -36,7 +37,7 @@ function Profile(props) {
     return (
         <li className="profile">
             <FontAwesomeIcon className="profile_icon" icon={faEdit}  />
-            <img src={"img/profile" + (props.i + 1) + ".png"} width="130px"></img>
+            <img src={"/img/profile" + (props.i + 1) + ".png"} width="130px" onClick={()=>{ history.push("/UserProfiles/"+ (props.data.id) )}}></img>
             <div className="profile_name">{props.data.name}</div>
         </li>
     )

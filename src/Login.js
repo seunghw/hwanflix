@@ -29,7 +29,7 @@ function Profile(props) {
 
     return (
         <li className="profile">
-            <img src={"img/profile" + (props.i + 1) + ".png"} width="130px" onClick={()=>{ history.push("/main")}}></img>
+            <img src={"/img/profile" + (props.i + 1) + ".png"} width="130px" onClick={()=>{ history.push("/main")}}></img>
             <div className="profile_name">{props.data.name}</div>
         </li>
     )
