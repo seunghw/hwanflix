@@ -29,8 +29,14 @@ function UserProfiles(props) {
                         </div>
                         <div className="auto_play">
                             <h2>자동 재생 설정</h2>
-                            <div><span>모든 디바이스에서 시리즈의 다음 화 자동 재생</span></div>
-                            <div><span>모든 디바이스에서 탐색 중 미리보기 자동 재생</span></div>
+                            <div className="series">
+                                <input type="checkbox" id="series1" name="series1" className="series1"></input>
+                                <label for="series">모든 디바이스에서 시리즈의 다음 화 자동 재생</label>
+                            </div> 
+                            <div className="series">
+                                <input type="checkbox" id="preview" checked></input>
+                                <label for="series">모든 디바이스에서 탐색 중 미리보기 자동 재생</label>
+                            </div>
                         </div>
                     </div>
                 </div>
