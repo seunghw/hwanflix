@@ -1,5 +1,4 @@
 // eslint-disable-next-line
-import "./App.css";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Login from "./Login";
 import ManageProfiles from "./ManageProfiles";
@@ -7,30 +6,28 @@ import UserProfiles from "./UserProfiles";
 import Movies from "./Movies";
 import Data from "./data.js";
 import { useState } from "react";
+import MovieDetail from "./component/views/MovieDetail/MovieDetail";
+import Navbar from "./common/Navbar";
 
 function App() {
   let [data, setdata] = useState(Data);
-  let history = useHistory();
 
   return (
     <div className="App">
-      <div className="Navbar">
-        <img
-          src="img/logo.png"
-          width="100px"
-          onClick={() => {
-            history.push("/");
-          }}
-        ></img>
-      </div>
+      <Navbar />
+
       <Switch>
         <Route exact path="/">
           {" "}
           <Login data={data} />{" "}
         </Route>
-        <Route path="/main">
+        <Route exact path="/movie">
           {" "}
           <Movies />
+        </Route>
+        <Route path="/movie/:movieId">
+          {" "}
+          <MovieDetail />
         </Route>
         <Route path="/ManageProfiles">
           <ManageProfiles data={data} />
