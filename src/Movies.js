@@ -8,18 +8,32 @@ import { Row } from "antd";
 function Movies(props) {
   const [Movies, setMovies] = useState([]);
   const [MainMovieImage, setMainMovieImage] = useState(null);
+  const [CurrentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
     const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko-US&page=1`;
 
+    fetchMovies(endpoint);
+  }, []);
+
+  const fetchMovies = (endpoint) => {
     fetch(endpoint)
       .then((response) => response.json())
       .then((response) => {
         console.log(response.results);
         setMovies([...Movies, ...response.results]);
         setMainMovieImage(response.results[1]);
+        setCurrentPage(response.page);
       });
-  }, []);
+  };
+
+  const loadMoreItems = () => {
+    const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko-US&page=${
+      CurrentPage + 1
+    }`;
+
+    fetchMovies(endpoint);
+  };
 
   return (
     <div style={{ width: "100%", margin: "0" }}>
@@ -52,7 +66,7 @@ function Movies(props) {
       </div>
 
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <button> Load More</button>
+        <button onClick={loadMoreItems}> Load More</button>
       </div>
     </div>
   );
