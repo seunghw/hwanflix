@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import React from "react";
-
+import { FaPlay } from "react-icons/fa";
 function MainImage(props) {
   return (
     <div
@@ -21,13 +21,22 @@ function MainImage(props) {
         <div
           style={{
             position: "absolute",
-            maxWidth: "500px",
+            maxWidth: "400px",
             bottom: "2rem",
             marginLeft: "2rem",
           }}
         >
-          <h2 style={{ color: "white" }}>{props.title}</h2>
-          <p style={{ color: "white", fontSize: "1rem" }}> {props.text}</p>
+          <h1 style={{ color: "white" }}>{props.title}</h1>
+          <p style={{ color: "white", fontSize: "0.9rem" }}> {props.text}</p>
+          <button
+            className="Manage_profile_button"
+            onClick={() => {
+              alert("준비중입니다!");
+            }}
+          >
+            <FaPlay size="10" />
+            재생
+          </button>
         </div>
       </div>
     </div>
