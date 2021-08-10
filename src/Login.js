@@ -1,11 +1,12 @@
 import { useHistory } from "react-router-dom";
 import "./Login.scss";
-
+import NavbarLogin from "./common/NavbarLogin";
 function Login(props) {
   let history = useHistory();
 
   return (
     <div>
+      <NavbarLogin />
       <h1 className="profile_header">
         {" "}
         넷플릭스를 시청할 프로필을 선택하세요.
@@ -37,6 +38,7 @@ function Profile(props) {
     <li className="profile">
       <img
         src={"/img/profile" + (props.i + 1) + ".png"}
+        alt=" "
         width="130px"
         onClick={() => {
           history.push("/movie");

@@ -4,6 +4,7 @@ import { API_URL, API_KEY, IMAGE_BASE_URL } from "./Config";
 import MainImage from "./MainImage";
 import GridCards from "./GridCards";
 import { Row } from "antd";
+import Navbar from "./common/Navbar";
 
 function Movies(props) {
   const [Movies, setMovies] = useState([]);
@@ -22,7 +23,7 @@ function Movies(props) {
       .then((response) => {
         console.log(response.results);
         setMovies([...Movies, ...response.results]);
-        setMainMovieImage(response.results[1]);
+        setMainMovieImage(response.results[0]);
         setCurrentPage(response.page);
       });
   };
@@ -37,6 +38,7 @@ function Movies(props) {
 
   return (
     <div style={{ width: "100%", margin: "0" }}>
+      <Navbar />
       {MainMovieImage && (
         <MainImage
           image={`${IMAGE_BASE_URL}w1280${MainMovieImage.backdrop_path}`}

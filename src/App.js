@@ -11,11 +11,8 @@ import Navbar from "./common/Navbar";
 
 function App() {
   let [data, setdata] = useState(Data);
-
   return (
     <div className="App">
-      <Navbar />
-
       <Switch>
         <Route exact path="/">
           {" "}
