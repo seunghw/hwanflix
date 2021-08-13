@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import { Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Login from "./Login";
 import ManageProfiles from "./ManageProfiles";
 import UserProfiles from "./UserProfiles";
@@ -7,7 +7,6 @@ import Movies from "./Movies";
 import Data from "./data.js";
 import { useState } from "react";
 import MovieDetail from "./component/views/MovieDetail/MovieDetail";
-import Navbar from "./common/Navbar";
 
 function App() {
   let [data, setdata] = useState(Data);
