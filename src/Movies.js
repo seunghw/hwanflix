@@ -38,7 +38,6 @@ function Movies(props) {
 
   return (
     <div style={{ width: "100%", margin: "0" }}>
-      <Navbar />
       {MainMovieImage && (
         <MainImage
           image={`${IMAGE_BASE_URL}w1280${MainMovieImage.backdrop_path}`}
@@ -70,6 +69,8 @@ function Movies(props) {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <button onClick={loadMoreItems}> Load More</button>
       </div>
+
+      <Navbar />
     </div>
   );
 }
