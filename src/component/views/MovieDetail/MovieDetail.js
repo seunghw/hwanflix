@@ -50,6 +50,7 @@ function MovieDetail(props) {
         <MovieInfo movie={movie} />
         <br />
 
+        <Navbar />
         {/* <Row gutter={[16, 16]}>
           {morecontent &&
             morecontent.map((others, index) => (
