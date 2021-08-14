@@ -66,8 +66,10 @@ function Movies(props) {
         </Row>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <button onClick={loadMoreItems}> Load More</button>
+      <div className="profile_set" style={{ padding: "1rem" }}>
+        <button className="profile_button" onClick={loadMoreItems}>
+          더보기
+        </button>
       </div>
 
       <Navbar />
