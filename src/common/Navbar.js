@@ -32,7 +32,9 @@ function Navbar() {
             alignItems: "center",
           }}
         >
-          <div style={{ marginLeft: "17px" }}>홈</div>
+          <div className="profile_name" style={{ marginLeft: "17px" }}>
+            홈
+          </div>
           <div style={{ marginLeft: "17px" }}>TV 프로그램</div>
           <div style={{ marginLeft: "17px" }}>영화</div>
           <div style={{ marginLeft: "17px" }}>NEW! 요즘 대세 콘텐츠</div>
