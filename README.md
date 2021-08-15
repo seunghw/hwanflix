@@ -2,18 +2,31 @@
 
 ## 🎬 Demo
 
-### 1차 현황
+## 1차 현황
+
+### 프로필 페이지
 
 <img src="https://raw.githubusercontent.com/seunghw/hwanflix/main/public/img/demo.gif" width="600px"/>
 
+## 2차 현황
+
+### 영화 메인 페이지
+
+<img src="https://user-images.githubusercontent.com/70190106/129466973-05ad49a7-0365-4e3a-9898-2c0a0de3ae8d.gif">
+
+### 영화 상세 페이지
+
+<img src="https://user-images.githubusercontent.com/70190106/129467024-4346c42b-c6fe-46d1-9923-5209c9169dc4.gif">
+
 ## 🎯 설명
 
-React 문법 및 Router와 scss를 중점적으로 연습하기 위한 넷플릭스 프로필 관리 페이지
+React 문법 및 Router와 scss, TMDB API를 활용한 영화 사이트
 
 ## 🚀 주요 스택
 
 - React
 - SCSS
+- API(TMDB)
 
 ## 🧩 구성
 

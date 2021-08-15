@@ -23,7 +23,7 @@ function Movies(props) {
       .then((response) => {
         console.log(response.results);
         setMovies([...Movies, ...response.results]);
-        setMainMovieImage(response.results[0]);
+        setMainMovieImage(response.results[8]);
         setCurrentPage(response.page);
       });
   };
