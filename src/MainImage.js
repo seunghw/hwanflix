@@ -38,7 +38,7 @@ function MainImage(props) {
             }}
           >
             {" "}
-            {props.text}
+            {props.text.slice(0, 140)}...
           </p>
           <button
             className="Manage_profile_button"
