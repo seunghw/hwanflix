@@ -23,7 +23,7 @@ function Movies(props) {
       .then((response) => {
         console.log(response.results);
         setMovies([...Movies, ...response.results]);
-        setMainMovieImage(response.results[8]);
+        setMainMovieImage(response.results[0]);
         setCurrentPage(response.page);
       });
   };
@@ -46,7 +46,7 @@ function Movies(props) {
         />
       )}
       <div style={{ width: "85%", margin: "1rem auto" }}>
-        <h2 style={{ color: "white" }}>Movies by lastest</h2>
+        <h2 style={{ color: "white", marginBottom: 10 }}>최신 상영작</h2>
 
         <Row gutter={[16, 16]}>
           {Movies &&
